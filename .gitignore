@@ -1,0 +1,11 @@
+.idea/
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.xml
+# Log file
+*.log
