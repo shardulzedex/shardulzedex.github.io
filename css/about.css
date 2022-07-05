@@ -1006,36 +1006,53 @@ section.foundation-sec {
 
 
 
-/* Reset CSS */
-
-
-
-.container {
-    padding: 100px 30px;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 900px;
-  }
-  
-
-  .image-stack {
+.img-container {
     display: grid;
-    position: relative; 
-    grid-template-columns: repeat(12, 1fr);
-  }
-  
-  .image-stack__item--sec {
-    grid-column: 7 / -2;
-    grid-row: 1;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
 }
-  .image-stack__item--first {
-    grid-row: 1;
-    grid-column: 1 / span 5;
-    /* padding-top: 20%; */
-    z-index: 1;
+.item3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
 }
+
   
-  .container img {
+  /*.container img {
     width: 100%;
     display: block;
+  }*/
+
+  .con1 {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
   }
+  
+  .con1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .item-a {
+    grid-row: 1 / 3;
+  }
+  
+  .item-b {
+    grid-column: 3 / 5;
+  }
+  
+  .item-c {
+    grid-row: 2 / 4;
+  }
+  
+  .item-d {
+    grid-column: 3 / 5;
+  }
+  
