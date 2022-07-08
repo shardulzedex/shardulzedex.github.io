@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Show Hide Elements Using Select Box</title>
+<style>
+.hidden {
+    display: none;
+}
+   
+   
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>$('[class^=is]').hide();
+
+    $("#theSelect").change(function(){          
+        var value = $("#theSelect option:selected").val();
+        var theDiv = $(".is" + value);
+        
+        theDiv.slideDown();
+        theDiv.siblings('[class^=is]').slideUp();
+    });</script>
+</head>
+<body><div class="selectContainer">
+    <select id="theSelect">
+        <option value="">- Select -</option>
+        <option value="Patient">Patient</option>
+        <option value="Physician">Physician</option>
+        <option value="Nurse">Nurse</option>
+    </select>
+</div>
+<div class="isPatient">Patient</div>
+<div class="isPhysician">Physician</div>
+<div class="isNurse">Nurse</div>
+</body>
+</html>

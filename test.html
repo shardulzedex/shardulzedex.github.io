@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Show Hide Elements Using Select Box</title>
+<style>
+    .box{
+        color: #fff;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+    }
+   
+   
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+</head>
+<body>
+    <div>
+        <select> 
+            <option value="digi">Digital Marketing</option>
+            <option value="front">Front - End Development</option>
+            <option value="back">Back - End Development</option>
+            <option value="full">Full Stack Development</option>
+        </select>
+    </div>
+   
+    <div class="digi box"><div class="selector-content digi" id="two">
+        <div>
+            <h3 class="front-cir"><img class="arrow-lern" src="./images/career/Rectangle-129.png">Digital Marketing</h3>
+            <div class="inner-cont" id="inner-cont1"><h4>Content Writer Intern (3 Months with PPO)            </h4>
+                <a class="gradiant-btn" href="#">Apply Now4 <img class="arrow-lern" src="./images/career/arrow-more.png"></a>
+        </div>
+
+    
+</div>
+</div></div>
+    <div class="front box"><div class="selector-content front" id="two">
+        <div>
+            <h3 class="front-cir"><img class="arrow-lern" src="./images/career/Rectangle-129.png">Front - End Development</h3>
+            <div class="inner-cont" id="inner-cont1"><h4>Content Writer Intern (3 Months with PPO)                </h4>
+                <a class="gradiant-btn" href="#">Apply Now1 <img class="arrow-lern" src="./images/career/arrow-more.png"></a>
+        </div>
+
+    
+</div>
+</div></div>
+    <div class="back box"> <div class="selector-content back" id="three">
+        <div>
+            <h3 class="back-cir"><img class="arrow-lern" src="./images/career/Rectangle-129.png">Back - End Development</h3>
+            <div class="inner-cont" id="inner-cont1"><h4>Content Writer Intern (3 Months with PPO)        </h4>
+                <a class="gradiant-btn" href="#">Apply Now2 <img class="arrow-lern" src="./images/career/arrow-more.png"></a>
+        </div>
+    
+    </div>
+    </div></div>
+    <div class="full box"><div class="selector-content full" id="four">
+        <div>
+            <h3 class="full-cir"><img class="arrow-lern" src="./images/career/Rectangle-129.png">Full Stack Development</h3>
+            <div class="inner-cont" id="inner-cont1"><h4>Content Writer Intern (3 Months with PPO)        </h4>
+                <a class="gradiant-btn" href="#">Apply Now3 <img class="arrow-lern" src="./images/career/arrow-more.png"></a>
+        </div>
+    </div></div>
+</body>
+</html>

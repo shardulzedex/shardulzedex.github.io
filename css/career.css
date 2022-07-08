@@ -1,21 +1,253 @@
 @-ms-viewport{
     width: device-width;
   }
+
+  @media screen and (min-width: 801px) and (max-width: 1060px){
+    .secbox {
+        margin-left: 5%!important;
+        margin-right: 5%!important;
+    }
+    .sqr-blk1{
+        padding: 40px!important;
+    }
+    .inner-cont {
+        padding: 50px 80px;
+    }
+    .sqr-blk1 h3 {
+        font-size: 20px;
+        height: 90px;
+        line-height: 27px;
+    }
+    .bottom-line{
+        top: 49px!important;
+    }
+  }
+  @media screen and (min-width: 1061px){
+    .secbox {
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    .inner-cont {
+        padding: 50px 180px;
+    }
+    .sqr-blk1 h3 {
+        font-size: 25px;
+        height: 90px;
+        line-height: 30px;
+    }
+  }
   @media screen and (min-width: 801px){
     h2.about-head:after {
-        top: 825px;
-        left: 388px;
+        margin-top: -53px;
+        margin-left: -238px;
+    }
+    .imgicon {
+        text-align: right;
+    }
+    .sqr-blk1:after {
+        width: 100px;
+        height: 18px;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+    
+    
+section.regret-sec {
+    margin-top: 180px;
+}
+    .selector-box select {
+        font-size: 23px;
+        line-height: 26px;
+    }
+    /*.paycheck-sec .img-col:before {
+        width: 280px;
+        height: 280px;
+        margin-left: 31px;
+    }*/
+  
+    .selector-content h3 {
+        padding-left: 80px;
+    }
+    h3 img.arrow-lern {
+        position: relative;
+        top: -13px;
+        max-width: 42px;
+        padding-right: 40px;
+    }
+    .desk-hide {
+        display: none;
     }
  }
+ @media screen and (max-width: 800px){
+ .paycheck-sec .text-col, .paycheck-sec .img-col{
+    width: 100%!important;
+ }
+ 
+.bottom-line {
+    width: 48px!important;
+    height: 8px!important;
+    top: 35px!important;
+}
+ .sqr-blk1 {
+    width: 39.33%!important;
+}
+ .selector-content a.gradiant-btn {
+    font-size: 10px!important;
+    line-height: 15px!important;
+}
+.gimgbox:before {
+    top: 65px;
+}
+ .life-sec a.gradiant-btn-abt {
+    display: block;
+    max-width: 100%;
+    width: fit-content;
+}
+.middle-col{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.column1 {
+    background: red;
+    float: left;
+    text-align: center;
+    float: left;
+    width: 28.33%;
+}
+.sqr-blk1 .imgicon {
+    text-align: right;
+}
+ .sqr-blk1:after {
+    width: 48px;
+    height: 8px;
+    margin-left: 29px;
+    margin-top: 26px;
+}
+.sqr-blk1 h3 {
+    font-size: 15px;
+    line-height: 20px;
+    height: 60px;
+}
+ .regret-sec .mainrow {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+.regret-sec .sqr-blk1{
+    /*width: 50%;*/
+    padding: 30px;
+}
+ .life-sec br {
+    display: none;
+}
+.life-sec h2.about-head {
+    text-align: center;
+}
+ .life-sec .gimgbox {
+    width: 100%;
+    padding-bottom: 30px;
+}
+.mob-hide {
+    display: none;
+}
+ .selector-box option {
+    font-size: 15px!important;
+    line-height: 18px!important;
+ }
+ .selector-box select {
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%!important;
+}
+ .paycheck-sec .img-col img{
+    width: 220px;
+ }
+ .paycheck-sec .img-col{
+    text-align: center;
+ }
+ /*.paycheck-sec .img-col:before {
+    width: 180px;
+        height: 180px;
+    margin-left: 20px;
+}*/
+ .paycheck-sec .text-col{
+    order: 1;
+ }
+ .paycheck-sec .row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+ h3 img.arrow-lern {
+    position: relative;
+    top: -7px;
+    max-width: 15px;
+    padding-right: 20px;
+}
+ .inner-cont {
+    padding: 20px 20px;
+    margin-bottom: 30px!important;
+}
+h3.front-cir {
+    font-size: 22px!important;
+    line-height: 43px!important;
+}
+.inner-cont a.gradiant-btn {
+    width: 90px!important;
+    margin-top: 20px;
+    padding: 9px;
+}
+.selector-content .inner-cont h4 {
+    font-size: 15px!important;
+    line-height: 18px!important;
+}
+}
 span.white-txt {
     color: #fff;
 }
+.middlebox {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.gimgbox img {
+    max-width: 100%;
+    filter: grayscale(1);
+}
+.gimgbox img:hover{
+filter: unset;
+}
+/*.gimgbox:before {
+    content: url(./images/career/arrow-white.png);
+    position: relative;
+    z-index: 15;
+    top: 55px;
+}*/
+.regret-sec .row:first-child {
+    padding-bottom: 50px;
+    position: inherit;
+    margin-top: -295px;
+}
+.gimgbox:before {
+    content: url(../images/career/patch-2.png);
+    position: relative;
+    top: 55px;
+    z-index: 1;
+}
+
 section.regret-sec {
     background: #101920;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gimgbox {
+    width: 33.33%;
+    text-align: center;
+    max-width: 100%;
 }
 .regret-sec h2 {
     color: #3FDBDB;
     text-transform: uppercase;
+    padding-bottom: 40px;
 }
 .career-pg h1 {
     text-transform: uppercase;
@@ -28,7 +260,11 @@ section.regret-sec {
 .career-pg {
     min-height: 100vh;
     background: #2AD6D6;
+    background-image: url(../images/career/career-banner1.png);
     justify-content: center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
     align-items: center;
     /* align-content: center; */
     display: flex;
@@ -42,24 +278,36 @@ p.grey-txt {
     padding-bottom: 20px;
 }
 h2.about-head{
-    font-size: 80px;
-    line-height: 102px;
-    font-family: 'Oswald';
     font-weight: 700;
     color: #252424;
     text-transform: uppercase;
     letter-spacing: 0.02em;
 }
-
+.sqr-blk1 {
+    width: 18.33%;
+    float: left;
+    padding: 50px;
+}
+.box2 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .sqr-blk1 h3 {
-    color: #fff;
-    font-size: 28px;
-    line-height: 32px;
+    color: #D6FFFF;
+    padding-top: 30px;
     font-family: 'Montserrat';
     text-align: left;
     letter-spacing: -0.015em;
 }
-.sqr-blk1 .imgicon {
+
+.sqr-blk1:hover {
+    background: #D6FFFF;
+}
+.sqr-blk1:hover h3 {
+    color: #000;
+}
+
+.sqr-blk1 .img-icon {
     text-align: right;
 }
 .sqr-blk1 {
@@ -68,6 +316,7 @@ h2.about-head{
     border: 0.7px solid #FFFFFF;
     padding: 50px;
     width: 33.33%;
+    
 }
 
 
@@ -76,38 +325,41 @@ h2.about-head{
 }
 .paycheck-sec .img-col {
     float: right;
+    margin-top: -30px;
+    z-index: 1;
     width: 28%;
 }
 .paycheck-sec .text-col {
     width: 68%;
     margin-right: 2%;
     float: left;
+    padding-top: 30px;
 }
 .paycheck-sec .img-col img {
     max-width: 100%;
 }
 .text-col h2 {
-    font-size: 65px;
-    line-height: 83px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
-.scrol-row h2 {
-    font-size: 51px;
+h3.front-cir {
+    color: #212121!important;
+}
+.scrol-row h3 {
     color: #4F4F4F;
-    line-height: 65px;
     letter-spacing: 0.025em;
     text-transform: capitalize;
 }
 img.line-img {
     padding-top: 30px;
+    max-width: 100%;
 }
 .selector-content .inner-cont h4 {
     color: #41DCDC;
     font-family: 'Montserrat';
     font-weight: 800;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 25px;
+    line-height: 29px;
     letter-spacing: -0.015em;
     text-transform: capitalize;
 }
@@ -116,12 +368,12 @@ img.line-img {
 }
 .inner-cont img.arrow-lern {
     padding-left: 10px;
+    width: 11px;
 }
 .inner-cont:hover img {
-    content: url(./images/career/arrow-white.png);
+    content: url(../images/career/white-arrow.png);
 }
 .inner-cont {
-    padding: 50px 180px;
     background: #EBFFFF;
     margin-bottom: 50px;
 }
@@ -129,7 +381,7 @@ img.line-img {
     display: block;
     box-shadow: unset;
     max-width: 100%;
-    width: 200px;
+    width: 160px;
 }
 .inner-cont:hover a.gradiant-btn {
     color: #fff;
@@ -138,15 +390,14 @@ img.line-img {
     color: #000;
 }
 
-  h3 img.arrow-lern {
-    position: relative;
-    top: -13px;
-    padding-right: 40px;
+ 
+.selector-content h3:before {
+    margin-top: 9px;
+    margin-left: 73px;
 }
 h3.didi-cir:after{
 margin-top: 23px;
 left: 595px;
-
 }
 h3.front-cir:after {
     margin-top: 12px;
@@ -171,30 +422,65 @@ h3.full-cir:after {
     border: 2px solid #000000;
     border-radius: 6.8px;
 }
+.selector-box option{
+    font-size: 20px;
+    line-height: 23px;
+    font-family: 'Montserrat';
+}
 .selector-box select {
-    font-size: 30px;
-    line-height: 34px;
     letter-spacing: -0.055em;
     text-transform: capitalize;
-    padding: 20px 40px;
-    width: 534px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    width: auto;
     font-weight: 600;
     font-family: 'Montserrat';
     max-width: 100%;
     background-color: white;
     display: inline-block;
 }
-select {
-   
-    /*-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;*/
-  }
-  .selector-box option {
-    font-size: 25px;
-    font-family: 'Montserrat';
+.selector-content ::before {
+    margin-left: 71px;
+    margin-top: 8px;
+}
+
+/*.regret-sec .row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 150px;
+}*/
+/*.sqr-blk1:after {
+    content: "";
+    border: 0.7px solid #FFFFFF;
+    position: absolute;
+    text-align: center;
+    border-radius: 50px 50px;
+}*/
+.bottom-line {
+    content: "";
+    border: 0.7px solid #FFFFFF;
+    text-align: center;
+    border-radius: 50px 50px;
+    width: 100px;
+    display: block;
+    height: 17px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    top: 59px;
+}
+.firstbox::after {
+    background: #1A6F87;
+}
+.secbox:after {
+    background: #FC9A1F;
+}
+.thirdbox:after {
+background: #2ABEC0;
+}
+.regret-sec .row {
+    padding-bottom: 50px;
 }
   select.arrows {
     background-image:    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA3klEQVRIS+3VMU9CMRTF8d8zBL+aizoQFhx0kUk33RzdYMNFXUFnYeGrYYyaJiUxJHDLSxodbNKpfeffc9/pbaPyaCrr+3OA++z4rtT5Pg5GuMnCY9yWQEoBE1xhlUUP8YDrCBIB0vojLvGO0yz4hm4JJAKcYYoPHGOZAUdYoIMBXrc5iQAHeMlzviFygj7O8dkWEJU4XI8chALRhn9AVKHf70VRTHu4wFfbmKZLNKt50dLBnna0imcMd/2I0phWa3Y/D1e1Xa9BCZJG0VuQNpaWKMx72xS1Fl5/WN3BN+AgJhnZQlq4AAAAAElFTkSuQmCC');
@@ -207,6 +493,34 @@ select {
     border-color: #000;
     outline: 0;
   }
-  .hide {
+  /*.hide {
     display: none;
+  }*/
+  
+  /*.paycheck-sec .img-col:before {
+    content: "";
+    background: #53EADF;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}*/
+  
+.firstbox .bottom-line {
+    background: #1A6F87;
+}
+.secbox .bottom-line{
+    background: #FC9A1F;
+}
+.thirdbox .bottom-line{
+    background: #2ABEC0;
+}
+  .col {
+    background-color: tomato;
+    text-align: center;
+    padding: 3em;
+    flex-basis: 50%;
+    border: 1px solid black;
   }
+  
+  
