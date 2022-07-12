@@ -3,6 +3,17 @@
 @-ms-viewport{
   width: device-width;
 }
+@media screen and (max-width: 1320px){
+.image-sec .max-wdth-sec {
+    padding: 0px!important;
+}
+}
+@media screen and (max-width: 1420px){
+.abt-img-banner{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
 @media screen and (max-width: 800px){
     .max-wdth-sec {
         padding: 0px 30px;
@@ -75,7 +86,7 @@
     }
 
     .dig-onehalf h3, .dig-sechalf h3{
-        font-size: 22px!important;
+        font-size: 21px!important;
         line-height: 27px!important;
     }
     .row {
@@ -139,7 +150,8 @@
     padding-bottom: 60px;
 }
 .abt-img-banner{
-    padding-bottom: 90px;  
+    padding-bottom: 85px;  
+    padding-top: 45px;
   }
 .about-sec h2:after {
     left: -25px;
@@ -347,11 +359,6 @@ position: relative;
 }
 
 
-.about-sec {
-    padding-top: 98px;
-    padding-bottom: 230px;
-}
-
  a.gradiant-btn,  a.gradiant-btn-abt{
 
     font-size: 21px;
@@ -391,9 +398,6 @@ position: relative;
     filter: unset;
 }
 
-.arrow-lern{
-    padding-left: 15px;
-}
 .counter-sec{
     padding-bottom: 100px;
 }
@@ -552,9 +556,7 @@ position: relative;
       filter: unset;
   }
   
-  .arrow-lern{
-      padding-left: 15px;
-  }
+ 
   .counter-sec{
       padding-bottom: 100px;
   }
@@ -1029,7 +1031,6 @@ section.image-sec {
       text-transform: uppercase;
   }
   
-  */
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -1106,6 +1107,14 @@ section.image-sec {
       grid-column: 3;
       grid-row: 1 / span 2;
   }
-  
-    
-   
+  .abt-img-banner {
+    background-image: url(../images/about/banner-abt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dig-onehalf {
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+.dig-sechalf {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10px 100%);
+}
