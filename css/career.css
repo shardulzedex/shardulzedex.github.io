@@ -2,7 +2,7 @@
     width: device-width;
   }
 
-  @media screen and (min-width: 801px) and (max-width: 1060px){
+  @media screen and (min-width: 768px) and (max-width: 1024px){
     .secbox {
         margin-left: 5%!important;
         margin-right: 5%!important;
@@ -22,7 +22,7 @@
         top: 49px!important;
     }
   }
-  @media screen and (min-width: 1061px){
+  @media screen and (min-width: 1025px){
     .secbox {
         margin-left: 9%;
         margin-right: 9%;
@@ -36,10 +36,14 @@
         line-height: 30px;
     }
   }
-  @media screen and (min-width: 801px){
+  @media screen and (min-width: 768px){
     h2.about-head:after {
         margin-top: -53px;
         margin-left: -238px;
+    }
+    .career-pg h1 {
+        font-size: 9.80vw;
+        line-height: 12.1vw;
     }
     .imgicon {
         text-align: right;
@@ -78,7 +82,7 @@ section.regret-sec {
         display: none;
     }
  }
- @media screen and (max-width: 800px){
+ @media screen and (max-width: 767px){
  .paycheck-sec .text-col, .paycheck-sec .img-col{
     width: 100%!important;
  }
@@ -255,6 +259,7 @@ section.regret-sec {
     line-height: 218px!important;*/
     color: #0E0E0E;
     text-align: center;
+   
 }
 
 .career-pg {

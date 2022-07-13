@@ -3,20 +3,52 @@
 @-ms-viewport{
   width: device-width;
 }
-@media screen and (max-width: 1320px){
+/*@media screen and (max-width: 1320px){
 .image-sec .max-wdth-sec {
     padding: 0px!important;
 }
-}
-@media screen and (max-width: 1420px){
+}*/
+/*@media screen and (max-width: 1420px){
 .abt-img-banner{
     padding-left: 30px;
     padding-right: 30px;
 }
+}*/
+@media screen and (max-width: 1190px){
+    .max-wdth-sec, .sharing-sec .col1-left{
+        padding-left: 30px;
+padding-right: 30px;
 }
-@media screen and (max-width: 800px){
+}
+@media screen and (min-width: 1025px) and (max-width: 1450px){
+    .max-wdth-sec {
+        max-width: 1100px!important;
+        margin: auto!important;
+    }
+    .sharing-sec .row1 {
+        max-width: 1100px!important;
+    }
+}
+
+@media screen and (max-width: 1450px){
+    .abt-img-banner{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 767px){
     .max-wdth-sec {
         padding: 0px 30px;
+    }
+    .dig-onehalf, .dig-sechalf{
+        padding: 30px!important;
+    }
+    section.image-sec {
+        padding-top: 30px!important;
+    }
+    .testi-blk h2 {
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .found-col {
         padding-bottom: 30px;
@@ -75,7 +107,7 @@
     }
     .lifezx {
         padding-bottom: 80px!important;
-        padding-top: 40px!important;
+        padding-top: 20px!important;
     }
     h2, h1.about-head{
     font-size: 32px!important;
@@ -137,17 +169,25 @@
         background: #26D7D7;
     }
 }
-@media screen and (min-width: 801px){
+@media screen and (min-width: 768px){
 .dig-onehalf, .dig-sechalf {
     width: 48%;
 }
+.image-sec .column {
+    float: left;
+    width: 23.33%;
+    margin-right: 20px;
+}
+.about-sec .row {
+    align-items: flex-start!important;
+}
 .lifezx {
     margin-bottom: 100px;
-    margin-top:  100px;
+    margin-top:  163px;
 }
 .found-col {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
 }
 .abt-img-banner{
     padding-bottom: 85px;  
@@ -209,8 +249,15 @@ h1.about-head:before
     height: 130px;
 }
 .row1 {
-    padding-top: 50px;
+    padding-top: 67px;
     display: flex;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1213px){
+.image-sec .column {
+    float: left;
+    width: 22.33%;
+    margin-right: 17px;
 }
 }
 body{
@@ -227,11 +274,7 @@ body{
 	margin: auto;
 }
 
-.max-wdth-sec{
-    max-width: 1200px;
-    margin: auto;
-    
-}
+
 
 
 .row{
@@ -365,11 +408,11 @@ position: relative;
     color: #000;
     text-transform: uppercase;
     font-family: 'Oswald';
-    padding: 14px;
+    padding: 13px 10px;
     border: 1px solid;
     width: 35%;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 52px;
     border: solid 4px transparent;
     /* background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa); */
     border-image: linear-gradient(to bottom, #41BEBE 0%, #2287E0 100%) 1;
@@ -862,7 +905,7 @@ position: relative;
       
     }
   .para-block {
-      padding-bottom: 50px;
+      padding-bottom: 70px;
   }
   h1.about-head {
       font-size: 80px;
@@ -885,7 +928,7 @@ position: relative;
       letter-spacing: 0.15em;
       text-transform: capitalize;
       color: #3FDBDB;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
   }
   .dig-onehalf, .dig-sechalf {
       background: #000;
@@ -909,7 +952,7 @@ position: relative;
   .life-col h2 {
       text-align: center;
       color: #252424;
-      padding-bottom: 30px;
+      padding-bottom: 15px;
       text-transform: uppercase;
       letter-spacing: 0.02em;
   }
@@ -917,12 +960,12 @@ position: relative;
     color: #1c1c1c;
 }
 section.image-sec {
-    padding-top: 60px;
+    padding-top: 45px;
 }
   
   .lifezx .btn-block {
       text-align: center;
-      margin-top: 60px;
+      padding-top: 90px;
   }
   
   .about-uspg .abt-img-banner:before {
@@ -934,8 +977,9 @@ section.image-sec {
   
   .testi-blk h2 {
       text-align: center;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 72px;
+      text-transform: uppercase;
+      padding-bottom: 72px;
       margin:  0px;
   }
   .col-onefifth {
@@ -989,10 +1033,10 @@ section.image-sec {
   }
      
      .dig-sechalf {
-      margin-left: 3%;
+      margin-left: 5%;
   }
   .dig-onehalf {
-      margin-right: 3%;
+      margin-right: 5%;
   }
   
   
@@ -1112,9 +1156,9 @@ section.image-sec {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.dig-onehalf {
+/*.dig-onehalf {
     clip-path: polygon(0 0, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
 }
 .dig-sechalf {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10px 100%);
-}
+}*/
