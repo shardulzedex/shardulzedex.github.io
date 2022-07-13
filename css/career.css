@@ -11,7 +11,7 @@
         padding: 40px!important;
     }
     .inner-cont {
-        padding: 50px 80px;
+        padding: 30px 224px;
     }
     .sqr-blk1 h3 {
         font-size: 20px;
@@ -24,8 +24,8 @@
   }
   @media screen and (min-width: 1025px){
     .secbox {
-        margin-left: 9%;
-        margin-right: 9%;
+        margin-left: 12%;
+        margin-right: 12%;
     }
     .inner-cont {
         padding: 50px 180px;
@@ -209,10 +209,7 @@ h3.front-cir {
 span.white-txt {
     color: #fff;
 }
-.middlebox {
-    margin-left: 2%;
-    margin-right: 2%;
-}
+
 .gimgbox img {
     max-width: 100%;
     filter: grayscale(1);
@@ -227,7 +224,7 @@ filter: unset;
     top: 55px;
 }*/
 .regret-sec .row:first-child {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     position: inherit;
     margin-top: -295px;
 }
@@ -241,7 +238,7 @@ filter: unset;
 section.regret-sec {
     background: #101920;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 180px;
 }
 .gimgbox {
     width: 33.33%;
@@ -251,7 +248,7 @@ section.regret-sec {
 .regret-sec h2 {
     color: #3FDBDB;
     text-transform: uppercase;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 .career-pg h1 {
     text-transform: uppercase;
@@ -275,8 +272,8 @@ section.regret-sec {
     display: flex;
 }
 section.life-sec {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 }
 p.grey-txt {
     color: #BBBBBB;
@@ -338,7 +335,7 @@ h2.about-head{
     width: 68%;
     margin-right: 2%;
     float: left;
-    padding-top: 30px;
+    padding-top: 80px;
 }
 .paycheck-sec .img-col img {
     max-width: 100%;
@@ -356,7 +353,7 @@ h3.front-cir {
     text-transform: capitalize;
 }
 img.line-img {
-    padding-top: 30px;
+    padding-top: 20px;
     max-width: 100%;
 }
 .selector-content .inner-cont h4 {
@@ -380,7 +377,7 @@ img.line-img {
 }
 .inner-cont {
     background: #EBFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .inner-cont a.gradiant-btn {
     display: block;
@@ -393,6 +390,7 @@ img.line-img {
 }
 .inner-cont a.gradiant-btn{
     color: #000;
+    margin-top: 20px!important;
 }
 
  
@@ -492,6 +490,7 @@ background: #2ABEC0;
     background-position: calc(100% - .5rem), 100% 0;
     background-size:  1.5em 1.5em;
     background-repeat: no-repeat;
+    padding-right: 20px;
   }
   
   select.arrows:focus {
@@ -528,4 +527,13 @@ background: #2ABEC0;
     border: 1px solid black;
   }
   
-  
+  .para-block p {
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.paycheck-sec .row {
+    justify-content: flex-start!important;
+}
+section.paycheck-sec {
+    padding-bottom: 80px;
+}
