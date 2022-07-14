@@ -21,6 +21,12 @@
     margin-right: 17px;
 }
 }*/
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    h2{
+    font-size: 48px;
+    line-height: 61px;
+}
+}
 @media screen and (max-width: 1300px) and (min-width: 768px){
 .max-wdth-sec {
     padding: 0px 30px!important;
@@ -29,6 +35,10 @@
 @media screen and (max-width: 767px){
 .max-wdth-sec {
     padding: 0px 30px!important;
+}
+.front-cir .arrow-lern {
+    width: 11px;
+    height: 3px;
 }
 a.gradiant-btn, a.gradiant-btn-abt{
  margin-top: 20px!important;   
@@ -49,8 +59,17 @@ p {
     font-size: 14px!important;
     line-height: 25px!important;
 }
-h1.about-head:before, .life-col h2:before, h2.about-head:after, .selector-content h3:after {
+/*h1.about-head:before, .life-col h2:before, h2.about-head:after, .selector-content h3:after {
     content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #26D7D7;
+    border-radius: 50%;
+    z-index: -1;
+}*/
+.green-circle:after{
+content: "";
     position: absolute;
     width: 20px;
     height: 20px;
@@ -59,8 +78,29 @@ h1.about-head:before, .life-col h2:before, h2.about-head:after, .selector-conten
     z-index: -1;
 }
 }
+@media screen and (min-width: 1921px){
+h2 {
+    font-size: 48px;
+    line-height: 61px;
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 1920px){
+h2{
+font-size : 5.5vh;
+line-height: 7.5vh;
+}
+}
 @media screen and (min-width: 768px){
-    h1.about-head:before, .life-col h2:before, h2.about-head:after, .selector-content h3:before  {
+    /*h1.about-head:before, .life-col h2:before, h2.about-head:after, .selector-content h3:before  {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #26D7D7;
+        border-radius: 50%;
+        z-index: -1;
+    }*/
+    .green-circle:before{
         content: "";
         position: absolute;
         width: 40px;
@@ -69,6 +109,10 @@ h1.about-head:before, .life-col h2:before, h2.about-head:after, .selector-conten
         border-radius: 50%;
         z-index: -1;
     }
+    .front-cir .arrow-lern {
+        width: 42px;
+        height: 9px;
+    }
     .arrow-lern {
         padding-left: 11px;
     }
@@ -76,10 +120,7 @@ h1.about-head:before, .life-col h2:before, h2.about-head:after, .selector-conten
         font-size: 150px;
         line-height: 180px;
     }
-    h2 {
-        font-size: 48px;
-        line-height: 61px;
-    }
+   
     h3{
     font-size: 38.8986px;
     line-height: 76px;
@@ -195,7 +236,4 @@ a.gradiant-btn,  a.gradiant-btn-abt{
     margin-left: -17px;
     margin-top: 0px;
     z-index: -1;
-}
-.arrow-lern {
-    width: 18px;
 }

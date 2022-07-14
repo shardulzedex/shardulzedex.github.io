@@ -52,17 +52,27 @@
     }
   }
   @media screen and (min-width: 768px){
-    h2.about-head:after {
+    /*h2.about-head:after {
         margin-top: -53px;
         margin-left: -238px;
+    }*/
+    .life-sec .col-left {
+        width: 25%!important;
+        padding-left: 20px;
+    }
+    .life-sec .col-right {
+        width: 75%;
+    }
+    h2.about-head:before {
+        margin-left: -24px;
     }
     h3.front-cir:after {
         margin-top: 12px;
         left: 733px;
     }
     .career-pg h1 {
-        font-size: 9.80vw;
-        line-height: 12.1vw;
+        font-size: 8vw;
+        line-height: 10.5vw;
     }
     .imgicon {
         text-align: right;
@@ -105,6 +115,10 @@ section.regret-sec {
  .paycheck-sec .text-col, .paycheck-sec .img-col{
     width: 100%!important;
  }
+ h2.about-head:after {
+    margin-top: -5px;
+    margin-left: -18px;
+}
  #inner-cont1 {
     display: flex;
     flex-wrap: nowrap;
@@ -119,10 +133,10 @@ section.regret-sec {
     margin-left: -11px;
     margin-top: 5px;
 }
- h2.about-head:after {
+ /*h2.about-head:after {
     margin-top: -53px;
     margin-left: -238px;
-}
+}*/
  section.life-sec{
     padding-top: 30px!important;
  }
@@ -295,7 +309,8 @@ filter: unset;
 
 section.regret-sec {
     padding-top: 50px;
-    padding-bottom: 180px;
+    padding-bottom: 145px;
+    background-image: url(../images/career/dot-n-black-bg.svg);
 }
 
 .gimgbox {
@@ -385,7 +400,7 @@ h2.about-head{
 }
 .paycheck-sec .img-col {
     float: right;
-    margin-top: -30px;
+    margin-top: -25px;
     z-index: 1;
     width: 28%;
 }
@@ -453,8 +468,8 @@ img.line-img {
 
  
 .selector-content h3:before {
-    margin-top: 11px;
-    margin-left: 60px;
+    margin-top: 14px;
+    margin-left: 72px;
 }
 h3.didi-cir:after{
 margin-top: 23px;
@@ -591,4 +606,22 @@ background: #2ABEC0;
 }
 section.paycheck-sec {
     padding-bottom: 80px;
+}
+.sqr-blk1:hover .icon1 img {
+    content: url(../images/career/Black-Flexi-hours.png);
+}
+.sqr-blk1:hover .icon2 img {
+    content: url(../images/career/Continuous-crossblack.png);
+}
+.sqr-blk1:hover .icon3 img {
+    content: url(../images/career/endless-professional-black.png);
+}
+.sqr-blk1:hover .icon4 img {
+    content: url(../images/career/black-pet-friendly.png);
+}
+.sqr-blk1:hover .icon5 img {
+    content: url(../images/career/work-hard-black.png);
+}
+.sqr-blk1:hover .icon6 img {
+    content: url(../images/career/Foodie-frndly-culture-black.png);
 }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/service.css" />
     <link rel="stylesheet" href="./css/global.css" />
+    <script type="text/javascript" src="./js/service.js"></script>
   </head>
   <body>
     <div class="service-main">
@@ -21,11 +22,11 @@
             <a href="" class="site-logo"
               ><img src="./images/service/zedex logo white.png"
             /></a>
-            <a href="">Web Services</a>
-            <a href="">Tech expertise</a>
-            <a href="">strategy</a>
-            <a href="">why zedexinfo?</a>
-            <a href="">testimonials</a>
+            <a href="#service-tab-sect">Web Services</a>
+            <a href="#service-tech-sect">Tech expertise</a>
+            <a href="">Strategy</a>
+            <a href="">Why Zedexinfo?</a>
+            <a href="#service-testimonial">Testimonials</a>
             <a href="" class="btn"
               >let’s discuss
               <svg
@@ -46,9 +47,10 @@
                 </p></a
               >
             </div>
-            <section class="service-tab-sect">
+            <section class="service-tab-sect" id="service-tab-sect">
               <div class="tabs-row">
                 <p class="bread-crump">HOME / SERVICE / WEB APP DEVELOPMENT</p>
+                <img src="./images/service/Ellipse 2.svg" class="header-circle">
                 <h1 class="service-heading service-circle-head">
                   Web Development That Drives Success
                 </h1>
@@ -59,9 +61,12 @@
                   standards, you can rely on us to get innovative solutions that
                   surpass your expectations.
                 </p>
+                <div class="service-tabs">
+                  
+              </div>
               </div>
             </section>
-            <section class="service-tech-sect">
+            <section class="service-tech-sect" id="service-tech-sect">
               <div class="col-left">
                 <h2>Technologies <br /><span>To Break New Grounds</span></h2>
                 <p>
@@ -83,7 +88,7 @@
                 <img src="./images/service/530x580.png" alt="" class=" lazy"/>
               </div>
             </section>
-            <section class="service-Conquer-sect">
+            <section class="service-Conquer-sect" id="service-Conquer-sect">
               <div class="col-left">
                 <img src="./images/service/530x580.png  " alt="" class="conquer-img lazy"/>
               </div>
@@ -91,6 +96,7 @@
                 src="./images/service/rectangle-bg.png" alt="" class="rectangle-bg lazy"/> -->
               <div class="rect-bg"></div>
               <div class="col-right">
+                <img src="./images/service/Ellipse 2.svg" class="header-circle">
                 <h2>Conquer Excellence <br /><span>with zedexinfo</span></h2>
                 <p>
                   We are successfully serving multiple industries with
@@ -117,7 +123,7 @@
                       d="M2 9.37533H18M18 9.37533L11.6364 2.66699M18 9.37533L11.6364 16.0837" stroke="#252424" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               </div>
             </section>
-            <section class="service-testimonial">
+            <section class="service-testimonial" id="service-testimonial">
               <h2 class="centered">WORDS THAT MAKE US <span>PROUD!</span></h2>
               <p class="centered sub-head">
                 Our invaluable clients across the globe recognize our dedication
@@ -173,6 +179,7 @@
         </div>
       </section>
     </div>
+    <!-- ------scripts------- -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
@@ -183,5 +190,24 @@
         },
       });
     </script>
+    
+    <!-- <script type="text/javascript">
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+  
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+  
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active')
+                })
+                target.classList.add('active');
+            })
+        })
+    </script> -->
+
+    <!-- ------scripts------- -->
   </body>
 </html>

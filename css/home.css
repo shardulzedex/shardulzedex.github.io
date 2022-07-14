@@ -16,10 +16,10 @@
       font-family: 'Oswald';
       font-weight: 600;
       color: #252424;
+      letter-spacing: 2px;
 
-      /* font-size: 3.2vw; */
-      /* line-height: 1.4; */
   }
+
   p{
       font-size: 18px;
       line-height: 35px;
@@ -208,7 +208,7 @@
   
   .about-sec {
       padding-top: 98px;
-      padding-bottom: 230px;
+      padding-bottom: 100px;
   }
   
    a.gradiant-btn{
@@ -254,16 +254,17 @@
   }
   .counter-sec{
       padding-bottom: 100px;
+      /* margin-top: 100px; */
   }
   
   
   
-  .swiper {
+  .swiper-sec .swiper {
       width: 100%;
       height: 100%;
     }
   
-    .swiper-slide {
+    .swiper-sec .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
@@ -281,7 +282,7 @@
       align-items: center;
     }
   
-    .swiper-slide img {
+    .swiper-sec .swiper-slide img {
       display: block;
       width: 100%;
       height: 100%;
@@ -290,19 +291,25 @@
 
     section.swiper-sec {
         background: #F1F1F1;
-        padding-top: 60px;
-        padding-bottom: 90px;
+        padding-top: 35px;
+        padding-bottom: 60px;
     }
 
     .swiper-sec .head{
         text-align: center;
         text-transform: uppercase;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
+        z-index: 1;
+    }
+    .swiper-sec .swiper-pointer-events{
+        min-height: 160px;
     }
      
   
   
-  
+    .block-three p{
+        text-align: right;
+    }
    
   
   
@@ -312,7 +319,7 @@
       align-items: center;
       justify-content: center;
       width: 300px;
-      height: 100px;
+      height: 50px;
       border-radius: 50%;
   }
   
@@ -396,8 +403,8 @@
       /* height: 100%; */
       fill: none;
       transform: rotate(-90deg);
-      top: -79px;
-      left: -20px;
+      top: -100px;
+      left: -26px;
       width: 150px;
       height: 150px;
       z-index: -1;
@@ -410,15 +417,18 @@
       /* height: 100%; */
       fill: none;
       transform: rotate(-90deg);
-      top: -73px;
-      left: 0px;
+      top: -100px;
+      left: 8px;
       width: 150px;
       height: 150px;
       z-index: -1;
   
   } 
+  .sub-col .block-two p{
+    text-align: center !important;
+  }
   
-  .block-one p, .block-two p  {
+  .block-one p, .block-two p, .block-three p  {
       font-size: 22px;
       line-height: 35px;
       color: #5E5B5B;
@@ -492,8 +502,13 @@
   .counter-sec .col-right{
   
       display: flex;
-      width: 60%;
+      width: 50%;
       justify-content: center;
+  }
+  .counter-sec .col-left{
+      width: 50%;
+      padding-right: 30px;
+        
   }
   
   .sub-col, .sub-col-second{
@@ -503,6 +518,7 @@
   .counter-sec .col-right{
       flex-direction: column;
       padding-left: 90px;
+      padding-top: 220px;
   
   }
   .sub-col-second{
@@ -654,7 +670,7 @@
   
       .wrk-us-sec .col-right a{   
            font-size: 23px;
-          color: #000;
+          color: #232323;
           font-family: 'Oswald';
           padding: 18px;
           border: 0px;
@@ -664,7 +680,53 @@
           text-decoration: none;
           text-transform: uppercase;
       }
+
+      .head{
+        position: relative;
+      }
+      .head h2:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #26D7D7;
+        mix-blend-mode: normal;
+        border-radius: 50%;
+        z-index: -1;
+        left: 37.5%;
+    }
+
+
+    /* @keyframes shake {
+        10%,
+        90% {
+          transform: translate3d(-1px, 0, 0);
+        }
       
-    
+        20%,
+        80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%,
+        50%,
+        70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%,
+        60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+      
+      .bub{
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0px 0px 36px 0px #555b6e88;
+        display: inline-block;
+        animation: shake 0s infinite ease-in-out;
+      }
+       */
     
   

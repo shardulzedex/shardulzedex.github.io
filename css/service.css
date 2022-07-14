@@ -1,3 +1,17 @@
+@media screen and (min-width:1025px){
+  .service-main h2 {
+    font-size: 3.1vw !important;
+    line-height: 4vw !important;
+  }
+  p {
+    font-size: 1.1vw;
+    line-height: 2.3vw;
+  }
+  h1.service-heading {
+    font-size: 3.5vw !important;
+    line-height: 3.6vw !important;
+  }
+}
 @media screen and (max-width:1200px) and (min-width:1025px) {
   .testimonial-profile {
     max-width: 222px !important;
@@ -8,6 +22,12 @@
 }
 }
 @media screen and (max-width:1024px){
+.service-tech-sect .col-right img, .service-Conquer-sect .col-left img{
+    padding-bottom: 30px;
+}
+.service-tech-sect p, .service-Conquer-sect p {
+    padding-top: 15px !important;
+}
    .testimonial-review {
     margin-left: unset !important;
     margin-top: -65px !important;
@@ -35,10 +55,39 @@
     max-width: unset !important;
     margin-left: unset !important;
 }
+.service-tech-sect .col-right{
+  text-align: unset !important;
 }
+.rect-bg {
+  right: -20px !important;
+}
+.service-Conquer-sect .col-right {
+  padding-left: unset !important;
+}
+.service-content{
+  padding: 0px 20px !important;
+}
+.service-tech-sect .col-left, .service-tech-sect .col-right, .service-Conquer-sect .col-left, .service-Conquer-sect .col-right {
+  width: 100% !important;
+}
+.service-tech-sect {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: unset !important;
+}
+.service-Conquer-sect{
+  display: flex;
+  flex-direction: column;
+  align-items: unset !important;
+}
+}
+/* -------------- */
+
+
 body{
   margin: 0;
 }
+
 .service-main {
     overflow: hidden;
 }
@@ -52,6 +101,10 @@ body{
 .service-sect {
   max-width: 1920px;
   margin: auto;
+}
+.service-main .header-circle {
+  margin-bottom: -43px;
+  margin-left: -16px;
 }
 .pop-up {
   max-width: 149px;
@@ -141,13 +194,17 @@ h1.service-heading {
   margin-left: 16px;
 }
 .service-nav-content .btn {
-  border-radius: 0px;
-  padding: 10px 0px 10px 36px;
-  max-width: 211px;
-  margin-left: 42px;
-  border: solid 4px transparent;
-  border-image: linear-gradient(to left, #41bebe 0%, #2287e0 100%) 1;
-  background-origin: border-box;
+    border-radius: 0px;
+    padding: 10px 0px 10px 36px;
+    max-width: 211px;
+    margin-left: 42px;
+    border: solid 4px transparent;
+    border-image: linear-gradient(to left, #41bebe 0%, #2287e0 100%) 1;
+    background-origin: border-box;
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 34.09px;
+    letter-spacing: 1.12px;
 }
 .service-Conquer-sect .btn {
   padding: 10px 0px 10px 0px;
@@ -186,7 +243,7 @@ h1.service-heading {
 section.service-tab-sect {
   padding-top: 94px;
 }
-.service-circle-head:before {
+/* .service-circle-head:before {
   content: "";
   width: 40px;
   height: 40px;
@@ -196,7 +253,7 @@ section.service-tab-sect {
   margin-left: -17px;
   margin-top: 0px;
   z-index: 0;
-}
+} */
 .service-tech-sect,
 .service-Conquer-sect {
   display: flex;
@@ -295,9 +352,15 @@ h3.profile-name {
 .service-tech-sect img, .service-Conquer-sect img {
     max-width: 100%;
 }
-.service-tech-sect img {
-  padding-left: 20px;
+.service-tech-sect .col-left {
+  padding-right: 20px;
 }
+.service-tabs {
+  display: flex;
+}
+/* ----tabs---- */
+
+ 
 /* ------------- */
 .swiper {
         width: 100%;
@@ -334,6 +397,7 @@ h3.profile-name {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
+  width: 16px;
 }
 
 .swiper-button-next::after {
@@ -346,6 +410,7 @@ h3.profile-name {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
+  width: 16px;
 }
 
 .swiper-button-prev::after {
