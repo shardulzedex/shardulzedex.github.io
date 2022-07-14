@@ -1,5 +1,46 @@
+@media screen and (max-width:1200px) and (min-width:1025px) {
+  .testimonial-profile {
+    max-width: 222px !important;
+}
+.testimonial-review {
+    margin-left: 50px !important;
+    margin-top: -99px !important;
+}
+}
+@media screen and (max-width:1024px){
+   .testimonial-review {
+    margin-left: unset !important;
+    margin-top: -65px !important;
+} 
+  .testimonial-profile {
+    max-width: 222px !important;
+    margin-right: unset !important;
+}
+.testimonial {
+    text-align: center !important;
+}
+.testimonial-review p {
+    padding-top: unset !important;
+}
+.testimonial-review {
+    padding: 130px 20px 43px 20px !important;
+}
+.service-nav {
+    display: none !important;
+}
+.service-content .service-site-width {
+    margin-left: unset !important;
+}
+.service-content {
+    max-width: unset !important;
+    margin-left: unset !important;
+}
+}
 body{
   margin: 0;
+}
+.service-main {
+    overflow: hidden;
 }
 .service-main h2 {
   text-transform: uppercase;
@@ -38,13 +79,12 @@ body{
 }
 .service-nav {
   display: inline-block;
-  width: 394px;
+  width: 348px;
 }
 .service-content {
   max-width: 1502px;
   margin-right: 0px;
-  margin-left: 394px;
-  /* height: 100vh; */
+  margin-left: 348px;
   background: rgb(255, 255, 255) !important;
   padding: 0px 10px;
 }
@@ -55,15 +95,15 @@ body{
 }
 .service-nav-content {
   margin-top: 50px;
-  margin-left: 53px;
+  margin-left: 10px;
   max-height: 700px;
   height: 100%;
 }
 .service-nav-content a {
   font-family: "Oswald";
-  max-width: 300px;
+  max-width: 290px;
   width: 100%;
-  margin: 0px 0px 40px auto;
+  margin: 0px 0px 40px 10px;
   padding: 10px 0px 10px 38px;
   border-radius: 25px 0px 0px 25px;
   transition: 0.3s;
@@ -89,7 +129,7 @@ body{
   color: unset !important;
 }
 .service-content .service-site-width {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 h1.service-heading {
   font-size: 52.46px;
@@ -195,28 +235,25 @@ section.service-tab-sect {
 }
 .service-Conquer-sect .col-right {
   z-index: 1;
+  padding-left: 20px;
 }
 .testimonial-profile img {
   width: 100px;
 }
 .testimonial-profile {
-  max-width: 258px;
-  width: 100%;
-  border: 1px solid #26d7d7;
-  text-align: center;
-  padding: 40px 0px 40px 0px;
-  box-shadow: 0px 4px 13px 0px #00000040;
-  background-color: #fff;
-  display: inline-block;
-  margin-right: 50%;
+    max-width: 258px;
+    width: 100%;
+    border: 1px solid #26d7d7;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+    box-shadow: 0px 4px 13px 0px #00000040;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 50%;
 }
 .testimonial-review {
-    max-width: 799px;
-    width: 100%;
-    margin: auto;
-    margin-right: 15%;
-    text-align: center;
-    margin-top: -137px;
+    margin-left: 192px;
+    margin-top: -113px;
 }
 .testimonial-review p {
     max-width: 564px;
@@ -226,18 +263,16 @@ section.service-tab-sect {
 }
 .testimonial-review {
     box-shadow: 0px 4px 13px 0px #00000040;
-    padding: 81px 0px 43px 0px;
+    padding: 81px 20px 43px 20px;
     background: #fff;
 }
-/* .testimonial-profile {
-  margin-left: 7%;
-  z-index: 1;
-} */
 .testimonial {
     padding-top: 63px;
     padding-bottom: 100px;
     display: block;
-    text-align: center;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 h3.profile-name {
     font-size: 29px;
@@ -245,14 +280,24 @@ h3.profile-name {
     letter-spacing: 2.56px;
     color: #26D7D7;
 }
+.rect-bg {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  display: block;
+  background: #26D7D7;
+  z-index: 0;
+  right: -10px;
+}
 .service-tech-sect .col-right {
     text-align: right;
 }
 .service-tech-sect img, .service-Conquer-sect img {
     max-width: 100%;
 }
-
-
+.service-tech-sect img {
+  padding-left: 20px;
+}
 /* ------------- */
 .swiper {
         width: 100%;
@@ -261,5 +306,54 @@ h3.profile-name {
 
       .swiper-slide {
         background: #fff;
+        width: 100%;
       }
 
+.swiper-slide {
+        /* text-align: center; */
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        /* -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center; */
+        align-items: flex-start;
+      }
+
+    .swiper-button-next {
+  background-image: url(../images/service/right\ arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+
+.swiper-button-prev {
+  background-image: url(../images/service/left\ arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+.quote-sign {
+    font-weight: 500;
+    font-size: 128px;
+    font-family: 'Oswald';
+    color: #252424;
+}

@@ -141,7 +141,7 @@
     
     --hamburgerWidth: var(--uiMenuHamburgerWidth);
     --hamburgerHeight: var(--uiMenuHamburgerHeight); */
-    --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
+    --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, transparent);
   
     /* width: 100%; */
     display: flex;

@@ -11,11 +11,12 @@
   
   
   h2{
-      font-size: 52px;
+      font-size: 3.25em;
       line-height: 66px;
       font-family: 'Oswald';
       font-weight: 600;
       color: #252424;
+
       /* font-size: 3.2vw; */
       /* line-height: 1.4; */
   }
@@ -78,14 +79,17 @@
   
   
   .banner h1 {
-      font-size: 150px;
+      font-size: 10.5em;
       color: #0E0E0E;
       letter-spacing: 5.5%;
       letter-spacing: 5.5px;
       margin-top: 0px;
       /* margin-bottom: 0px; */
       font-family: 'Oswald', sans-serif;
-      line-height: 90px;
+      line-height: 170px;
+  }
+  .banner span{
+    color: #26D7D7;
   }
   
   .banner h2{
@@ -127,7 +131,20 @@
   .about-sec .col-right {
       width: 60%;
       padding-left: 50px;
+      position: relative;
   }
+  .abt-img-top{
+  position: relative;
+  }
+
+  .abt-img-top:before {
+    content: url(./images/home-images/DOTS-img.svg);
+    top: 35px;
+    /* left: 9px; */
+    z-index: -1;
+    right: 0px;
+    position: absolute;
+}
   
   .abt-img-top {
       display: flex;
@@ -168,6 +185,7 @@
       top: 50px;
       right: 0px;
   }
+
   
   .about-sec h2:after {
       content: "";
@@ -240,7 +258,7 @@
   
   
   
-  /* .swiper {
+  .swiper {
       width: 100%;
       height: 100%;
     }
@@ -268,7 +286,19 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-    } */
+    }
+
+    section.swiper-sec {
+        background: #F1F1F1;
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    .swiper-sec .head{
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
      
   
   
@@ -370,6 +400,7 @@
       left: -20px;
       width: 150px;
       height: 150px;
+      z-index: -1;
   
   }
   
@@ -383,6 +414,7 @@
       left: 0px;
       width: 150px;
       height: 150px;
+      z-index: -1;
   
   } 
   
@@ -535,6 +567,7 @@
   
       section.zx-portfolio-sec {
           padding-bottom: 220px;
+          padding-top: 75px;
       }
   
       .location-sec .column{
