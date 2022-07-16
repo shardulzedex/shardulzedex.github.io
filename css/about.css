@@ -300,8 +300,7 @@ h2.about-head:before {
     height: 130px;
 }
 .row1 {
-    padding-top: 67px;
-    display: flex;
+    padding-top: 95px;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1213px){
@@ -1084,10 +1083,10 @@ section.image-sec {
   }
      
      .dig-sechalf {
-      margin-left: 5%;
+      margin-left: 4%;
   }
   .dig-onehalf {
-      margin-right: 5%;
+      margin-right: 4%;
   }
   
   

@@ -64,6 +64,10 @@
         margin-top: -53px;
         margin-left: -238px;
     }*/
+
+    .life-sec .row {
+        align-items: flex-start;
+    }
     .life-sec .col-left {
         width: 20%!important;
         padding-left: 20px;
@@ -72,6 +76,7 @@
         width: 80%;
         padding-left: 20px;
     }
+    
     h2.about-head:before {
         margin-left: -24px;
     }
@@ -124,6 +129,15 @@ section.regret-sec {
  .paycheck-sec .text-col, .paycheck-sec .img-col{
     width: 100%!important;
  }
+ .sqr-blk1:hover .icon2 {
+    display: block!important;
+}
+.sqr-blk1:hover .icon1 {
+    display: none;
+}
+.imgicon.icon2 {
+    display: none;
+}
  h2.about-head:after {
     margin-top: -5px;
     margin-left: -18px;
@@ -341,8 +355,10 @@ section.regret-sec {
    
 }
 .career-pg {
-    background: #2AD6D6;
-    background-image: url(../images/career/career-banner1.png);
+    background-image: url(../images/career/bluebg.png);
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
 }
 
 section.life-sec {
@@ -599,7 +615,6 @@ background: #2ABEC0;
   }
   
   .para-block p {
-    font-weight: 600;
     padding-bottom: 20px;
 }
 .paycheck-sec .row {
@@ -626,12 +641,34 @@ section.paycheck-sec {
 .sqr-blk1:hover .icon6 img {
     content: url(../images/career/Foodie-frndly-culture-black.png);
 }*/
-.sqr-blk1:hover .whiteimg {
+
+/*.firstbox:hover .mainimg {
     display: none;
 }
-.sqr-blk1:hover .blkimg {
-    display: block!important;
+.hoverimg {
+    display: none;
 }
-.blkimg {
+.firstbox:hover .hoverimg {
+    display: initial!important;
+}*/
+
+/*.firstbox:hover img.mainimg {
+    display: none;
+}*/
+
+
+picture .hoverimg {
+    display: none;
+}
+/*.firstbox:hover picture .hoverimg, .secbox:hover picture .hoverimg, .thirdbox:hover picture .hoverimg {
+    display: inline-flex;
+}
+.firstbox:hover .mainimg, .secbox:hover .mainimg, .thirdbox:hover .mainimg {
+    display: none;
+}*/
+.sqr-blk1:hover picture .hoverimg {
+    display: inline-flex;
+}
+.sqr-blk1:hover .mainimg {
     display: none;
 }
