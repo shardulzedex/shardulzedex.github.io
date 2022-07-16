@@ -86,8 +86,8 @@ h2 {
 }
 @media screen and (min-width: 1025px) and (max-width: 1920px){
 h2{
-font-size : 5.5vh;
-line-height: 7.5vh;
+    font-size: 3vw;
+    line-height: 4.5vw;    
 }
 }
 @media screen and (min-width: 768px){
@@ -173,13 +173,23 @@ color: #3D4646;
 
 }
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'montserrat';
-    line-height: 35.23px;
+    line-height: 31px;
     font-weight: 500;
     color: #4F4F4F;
     letter-spacing: -0.16px;
     
+}
+.banner {
+    min-height: 100vh;
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    /* align-content: center; */
+    display: flex;
 }
 
 /*.row {
